@@ -1,4 +1,3 @@
-# .github
 # 🍇 GrapeGreen, Inc.
 
 Welcome to the official organization space for **GrapeGreen**—your dashboard, your tabs, your memes. 
