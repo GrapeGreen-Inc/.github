@@ -20,5 +20,5 @@ Repository access and workspace management operate under a structured permission
 * **Community:** Registered Members & Global Guests
 
 ---
-
+###### read [TOS](https://github.com/GrapeGreen-Inc/.github/blob/main/profile/TOS.txt)
 *Copyright (c) 2026 GrapeGreen, Inc. All rights reserved. All underlying source frameworks, stylesheets, and interface properties operate under proprietary closed-source platform agreements.*
