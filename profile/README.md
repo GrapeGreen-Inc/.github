@@ -6,6 +6,11 @@ This workspace is dedicated to building, maintaining, and deploying high-perform
 
 ---
 
+## Main Applcation:
+https://grapegreen-inc.github.io/GrapeGreen/
+
+---
+
 ### 🛡️ Platform Mission & Operations
 * **User-First Privacy:** We design our applications with strict data boundaries, ensuring modern privacy compliance standards across all user tiers.
 * **Proactive Security:** Our systems integrate advanced automated verification checks and edge firewalls to keep our global platform stable and free from bot automated traffic.
