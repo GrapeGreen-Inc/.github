@@ -11,6 +11,11 @@ https://grapegreen-inc.github.io/GrapeGreen/
 
 ---
 
+<img width="64" height="64" alt="GrapeGreen_Logo" src="https://github.com/user-attachments/assets/e0ae76d6-699f-4752-931b-129bce536b63" />
+
+
+---
+
 ### 🛡️ Platform Mission & Operations
 * **User-First Privacy:** We design our applications with strict data boundaries, ensuring modern privacy compliance standards across all user tiers.
 * **Proactive Security:** Our systems integrate advanced automated verification checks and edge firewalls to keep our global platform stable and free from bot automated traffic.
