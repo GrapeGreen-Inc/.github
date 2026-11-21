@@ -6,7 +6,7 @@ This workspace is dedicated to building, maintaining, and deploying high-perform
 
 ---
 
-## Main Applcation:
+## Main Application:
 https://grapegreen-inc.github.io/GrapeGreen/
 
 ---
