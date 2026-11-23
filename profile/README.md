@@ -75,5 +75,5 @@ Repository access and workspace management operate under a structured permission
 
 ###### As a developer, you agree to the site TOS and know the consequences if you do not follow them.
 
-###### read [TOS](https://github.com/GrapeGreen-Inc/.github/blob/main/profile/TOS.txt)
+###### read [TOS](https://github.com/GrapeGreen-Inc/.github/blob/main/profile/TOS.md)
 *Copyright (c) 2026 GrapeGreen, Inc. All rights reserved. All underlying source frameworks, stylesheets, and interface properties operate under proprietary closed-source platform agreements.*
