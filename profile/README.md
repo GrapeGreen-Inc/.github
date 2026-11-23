@@ -11,8 +11,7 @@ https://grapegreen-inc.github.io/GrapeGreen/
 
 ---
 
-<img width="64" height="64" alt="transparent" src="https://github.com/user-attachments/assets/a57cfc95-e1ac-4690-a61d-12f8005f7b60" />
-
+<img width="282" height="268" alt="logo" src="https://github.com/user-attachments/assets/31dd435d-08a8-430a-821a-c6b117cbd9e6" />
 
 ---
 
