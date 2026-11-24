@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrapeGreen — Official Hub</title>
     <link rel="icon" type="image/png" href="https://GrapeGreen-inc.github.io/GrapeGreen/dashboard/site/assets/images/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
       body {
         margin: 0;
@@ -109,7 +110,7 @@
         color: #9ca3af;
       }
 
-      /* Fullscreen Iframe Overlay */
+      /* Fullscreen Markdown Viewer Overlay */
       #viewer {
         display: none;
         position: fixed;
@@ -117,7 +118,8 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #1f2937;
+        background-color: #f9fafb;
+        color: #1f2937;
         z-index: 9999;
         flex-direction: column;
       }
@@ -154,11 +156,36 @@
         color: #e9d5ff;
       }
 
-      #app-frame {
+      #doc-content {
         flex: 1;
+        overflow-y: auto;
+        padding: 32px 24px;
+        max-width: 800px;
         width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        line-height: 1.6;
+        text-align: left;
+      }
+
+      #doc-content h1, #doc-content h2, #doc-content h3 {
+        color: #3b1470;
+      }
+
+      #doc-content hr {
         border: none;
-        background-color: #ffffff;
+        border-top: 1px solid #e5e7eb;
+        margin: 24px 0;
+      }
+
+      #doc-content a {
+        color: #65a30d;
+        font-weight: 600;
+      }
+
+      #doc-content img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -179,27 +206,38 @@
       </div>
     </div>
 
-    <!-- Fullscreen Iframe Viewer -->
+    <!-- Fullscreen Markdown Viewer -->
     <div id="viewer">
       <div class="viewer-bar">
         <button class="back-btn" onclick="closeViewer()">← Back to Hub</button>
         <span id="viewer-title">GrapeGreen</span>
         <div style="width: 90px;"></div>
       </div>
-      <iframe id="app-frame" src=""></iframe>
+      <div id="doc-content">Loading...</div>
     </div>
 
     <script>
-      function openViewer(url, title) {
+      async function openViewer(url, title) {
+        const viewer = document.getElementById('viewer');
+        const content = document.getElementById('doc-content');
         document.getElementById('viewer-title').textContent = title;
-        document.getElementById('app-frame').src = url;
-        document.getElementById('viewer').style.display = 'flex';
+        content.innerHTML = '<p>Loading document...</p>';
+        viewer.style.display = 'flex';
         document.body.style.overflow = 'hidden';
+
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error('Network error');
+          const markdownText = await response.text();
+          content.innerHTML = marked.parse(markdownText);
+        } catch (error) {
+          content.innerHTML = `<p>Could not render preview. <a href="${url}" target="_blank" rel="noopener noreferrer">Open raw file</a></p>`;
+        }
       }
 
       function closeViewer() {
         document.getElementById('viewer').style.display = 'none';
-        document.getElementById('app-frame').src = '';
+        document.getElementById('doc-content').innerHTML = '';
         document.body.style.overflow = 'auto';
       }
     </script>
