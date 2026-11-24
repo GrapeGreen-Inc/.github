@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrapeGreen — Official Hub</title>
-    <link rel="icon" type="image/png" href="https://github.com">
+    <link rel="icon" type="image/png" href="https://GrapeGreen-inc.github.io/GrapeGreen/dashboard/site/assets/images/logo.png">
     <style>
       body {
         margin: 0;
@@ -69,9 +69,12 @@
         padding: 13px 16px;
         margin-bottom: 12px;
         border-radius: 10px;
+        border: none;
         text-decoration: none;
+        font-family: inherit;
         font-weight: 600;
         font-size: 15px;
+        cursor: pointer;
         box-sizing: border-box;
         transition: transform 0.15s ease, background-color 0.15s ease;
       }
@@ -105,23 +108,100 @@
         font-size: 12px;
         color: #9ca3af;
       }
+
+      /* Fullscreen Iframe Overlay */
+      #viewer {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f2937;
+        z-index: 9999;
+        flex-direction: column;
+      }
+
+      .viewer-bar {
+        background-color: #2b1055;
+        color: #ffffff;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #65a30d;
+      }
+
+      .back-btn {
+        background-color: #65a30d;
+        color: #ffffff;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.15s ease;
+      }
+
+      .back-btn:hover {
+        background-color: #4d7c0f;
+      }
+
+      #viewer-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #e9d5ff;
+      }
+
+      #app-frame {
+        flex: 1;
+        width: 100%;
+        border: none;
+        background-color: #ffffff;
+      }
     </style>
   </head>
   <body>
     <div class="card">
-      <img class="logo" src="https://github.com" alt="GrapeGreen Logo">
+      <img class="logo" src="https://GrapeGreen-inc.github.io/GrapeGreen/dashboard/site/assets/images/logo.png" alt="GrapeGreen Logo">
       <h1>Grape<span>Green</span></h1>
       <p class="tagline">Your dashboard, your tabs, your memes.</p>
       <div class="badge">Current Build: V1.11 (App+)</div>
 
       <a class="btn btn-primary" href="https://grapegreen-inc.github.io/GrapeGreen/index.html">🚀 Launch GrapeGreen Dashboard</a>
-      <a class="btn btn-secondary" href="https://GrapeGreen-Inc.github.io/.github/profile/TOS.md" target="_blank" rel="noopener noreferrer">📜 Terms of Service (TOS)</a>
-      <a class="btn btn-secondary" href="https://GrapeGreen-Inc.github.io/.github/profile/README.md" target="_blank" rel="noopener noreferrer">🍇 Organization README & Dev Info</a>
-      <a class="btn btn-secondary" href="https://GrapeGreen-Inc.github.io/.github/profile/Update_Log.md" target="_blank" rel="noopener noreferrer">📋 Update Log</a>
+      <button class="btn btn-secondary" onclick="openViewer('https://GrapeGreen-Inc.github.io/.github/profile/TOS.md', 'Terms of Service (TOS)')">📜 Terms of Service (TOS)</button>
+      <button class="btn btn-secondary" onclick="openViewer('https://GrapeGreen-Inc.github.io/.github/profile/README.md', 'Organization README')">🍇 Organization README & Dev Info</button>
+      <button class="btn btn-secondary" onclick="openViewer('https://GrapeGreen-Inc.github.io/.github/profile/Update_Log.md', 'Update Log')">📋 Update Log</button>
 
       <div class="footer">
         © 2026 GrapeGreen, Inc. • All rights reserved.
       </div>
     </div>
+
+    <!-- Fullscreen Iframe Viewer -->
+    <div id="viewer">
+      <div class="viewer-bar">
+        <button class="back-btn" onclick="closeViewer()">← Back to Hub</button>
+        <span id="viewer-title">GrapeGreen</span>
+        <div style="width: 90px;"></div>
+      </div>
+      <iframe id="app-frame" src=""></iframe>
+    </div>
+
+    <script>
+      function openViewer(url, title) {
+        document.getElementById('viewer-title').textContent = title;
+        document.getElementById('app-frame').src = url;
+        document.getElementById('viewer').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeViewer() {
+        document.getElementById('viewer').style.display = 'none';
+        document.getElementById('app-frame').src = '';
+        document.body.style.overflow = 'auto';
+      }
+    </script>
   </body>
 </html>
