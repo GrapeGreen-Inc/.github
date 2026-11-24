@@ -16,8 +16,14 @@ GrapeGreen™ maintains segregated environments based on verified user age to en
 *   Over-13 Infrastructure: Users aged thirteen (13) and older are permitted access to our standard, adult-moderated Chat Rooms. 
 *   System Errors & Restrictions: You acknowledge that automated age-gating verification tools or system updates may occasionally restrict account access or misclassify data. GrapeGreen™ reserves the right to suspend or restrict access to any account during an investigation or technical verification process.
 
-3. CHEZBURGER
-chez burgers are good.
+3. CODE OF CONDUCT AND PLATFORM RULES
+To maintain a safe and welcoming community across all GrapeGreen™ chat rooms, private messages, and public tabs, you agree not to engage in any of the following prohibited activities:
+*   **Harassment and Abuse:** Engaging in hate speech, bullying, threats, doxxing, or targeted harassment against other users, moderators, or staff members.
+*   **Explicit or Illegal Content:** Sharing, uploading, or linking to sexually explicit material, graphic violence, illegal content, or age-restricted content in non-18+ spaces.
+*   **Spam and Malicious Links:** Flooding chat channels, bypassing automated chat filters or moderation bots, or sharing unauthorized external links, phishing sites, malware, or IP-grabbing URLs.
+*   **Impersonation and Ban Evasion:** Impersonating GrapeGreen™ staff, developers, or automated bots, or creating alternate accounts to bypass temporary or permanent account restrictions.
+*   **Enforcement:** GrapeGreen™ reserves the right to monitor public channels, remove violating content, and issue warnings, temporary suspensions, or permanent account bans at our sole discretion for any violation of these rules.
+
 
 4. DISCLAIMER OF WARRANTIES ("AS IS")
 THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, GRAPEGREEN™ DISCLAIMS ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. GRAPEGREEN DOES NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, SECURE, ACCURATE, ERROR-FREE, OR FREE OF BUGS, ANOMALIES, SYSTEM GLITCHES, AND VERIFICATION LOCKOUTS.
@@ -40,8 +46,7 @@ We are not responsible if you share your gift card code or share your GrapeGreen
 9. COPYING AND PIRATING
 GrapeGreen™ does not tolerate pirating or copying at any time, if you see a pirated or copied version or a forked version of GrapeGreen™ please contact us at GrapeGreenInc@gmail.com with the fake copy web address, if you copy or pirate this you will be subjected to legal action and a DMCA takedown, no one except those permitted are allowed to modify the site code.
 
-10. COPYRIGHT LICENSE ©
-GrapeGreen™ is currently under a normal internet copyright license, they states you may not copy this and claim it as your own.
+All content, code, graphics, and branding on GrapeGreen™ are protected by United States and international copyright laws. All rights reserved.
 
 11. AMENDMENTS
 We reserve the right to modify these Terms at any time. We will provide notice of material changes by posting the updated Terms on the Service and updating the "Last Updated" date. Your continued use of the Service after such modifications constitutes your acceptance of the revised Terms.
