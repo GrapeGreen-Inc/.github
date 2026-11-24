@@ -48,6 +48,9 @@ GrapeGreen™ does not tolerate pirating or copying at any time, if you see a pi
 
 All content, code, graphics, and branding on GrapeGreen™ are protected by United States and international copyright laws. All rights reserved.
 
+10. COPYRIGHT LICENSE ©
+All content, code, graphics, and branding on GrapeGreen™ are protected by United States and international copyright laws. All rights reserved.
+
 11. AMENDMENTS
 We reserve the right to modify these Terms at any time. We will provide notice of material changes by posting the updated Terms on the Service and updating the "Last Updated" date. Your continued use of the Service after such modifications constitutes your acceptance of the revised Terms.
 
